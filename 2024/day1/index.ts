@@ -17,11 +17,11 @@ stack0.sort()
 stack1.sort()
 
 const length = stack0.length
-let sum1 = 0;
+let sum = 0;
 for (let i = 0; i < length; i++) {
     const element0 = stack0.pop()!;
     const element1 = stack1.pop()!;
-    element0 > element1  ? sum1 = sum1 + element0 - element1 : sum1 = sum1 + element1 - element0
+    element0 > element1  ? sum = sum + element0 - element1 : sum = sum + element1 - element0
     
 }
-console.log("the awnser for part 1 is:",sum1)
+console.log("the awnser is:",sum)
